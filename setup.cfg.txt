@@ -1,0 +1,13 @@
+[metadata]
+name = all_packages
+version = {}
+url = https://github.com/adang1345/pypi_all_packages
+author = Aohan Dang
+author_email = adang1345@gmail.com
+license = MIT
+description = Every package on PyPI
+long_description = file: README_pypi.md
+long_description_content_type = text/markdown
+
+[options]
+install_requires =

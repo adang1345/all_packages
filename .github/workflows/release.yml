@@ -1,0 +1,19 @@
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 0 * * *'
+
+jobs:
+  release:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: check out repository
+        uses: actions/checkout@v2
+      - name: configure sources
+        run: python3 configure.py
+      - name: install dependencies
+        run: pip3 install --user setuptools wheel twine
+      - name: create wheel
+        run: python3 setup.py bdist_wheel
+      - name: deploy wheel
+        run: python3 -m twine upload -u __token__ -p ${{ secrets.PYPI_TOKEN }} dist/*.whl
