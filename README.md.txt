@@ -3,7 +3,7 @@
 The Python Package Index (PyPI) contains over 300,000 Python packages. Need a
 Python library but don't want to search through all the options? Search no
 further! `all_packages` is a Python script that attempts to install every
-package on PyPI - all 349,451 of them as of 11 Jan 2022.
+package on PyPI - all {:,} of them as of {}.
 
 ## Install
 ```

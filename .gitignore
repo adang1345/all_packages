@@ -1,4 +1,4 @@
 /build
 /dist
-/setup.cfg
-/README_pypi.md
+__pycache__/
+/all_packages.egg-info
